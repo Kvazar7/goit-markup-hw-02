@@ -1,53 +1,135 @@
-body { font-family: 'Raleway', sans-serif; font-family: 'Roboto', sans-serif; }
-ul {list-style: none;}
-.header {font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #212121;
-    background-color: #FFFFFF;;}
-.header:hover {color: #2196F3;}
-    .logo {text-decoration: none;
+:root {
+    --primary-color: #212121;
+    --secondary-color: #757575;
+    --hover-color: #2196F3;
+    --primary-background: #F5F5F5;
+    --secondary-background: #F5F4FA;
+    --hero-background: #2F303A;
+}
+a {text-decoration: none}
+ul {list-style: none}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal}
+
+.header {background-color: #FFFFFF}
+
+    .logo {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
-        line-height: 31px;
-        letter-spacing: 0.03em;}
-    .logoweb {color: #2196F3;}
-    .logostudio {color: #000000;}
-    .link {text-decoration: none;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 16px;
-            letter-spacing: 0.02em;
-            color: #212121;}
-    .link:hover,:focus {color: #2196F3;}
+        line-height: 1.2;
+        letter-spacing: 0.03em}
+    .logoweb {color: #2196F3}
+    .logostudio {color: #000000}
 
-    .contacts {text-decoration: none;
-            font-style: normal;
+    .link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        color: var(--primary-color)}
+    .link:hover, :focus {color: var(--hover-color)}
+    .contacts {
             font-weight: 500;
             font-size: 14px;
-            line-height: 16px;
+            line-height: 1.1;
             letter-spacing: 0.02em;
-            color: #757575;}
-    .contacts:hover,:focus {color: #2196F3;}
-    footer {background-color: #2F303A;}
-    .adressfooter {text-decoration: none;
-                    font-style: normal;
+            color: var(--secondary-color)}
+    .contacts:hover,:focus {color: var(--hover-color)}
+   
+    .herosection {background-color: var(--hero-background)}
+    .hero {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.4;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FFFFFF}
+
+   .button {cursor: pointer;
+            background-color: var(--hover-color);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.9;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.06em;
+            color: #FFFFFF}
+    
+        .feature {display: none}
+        
+            .features {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 1.1;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: var(--primary-color)}
+
+                .text-features {
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 24px;
                     letter-spacing: 0.03em;
-                    color: #FFFFFF;}
-    .contactsfooter {text-decoration: none;
+                    color: var(--secondary-color)}
+        
+            .whatwedo, .ourteam {
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 1.2;
+                letter-spacing: 0.03em;
+                color: var(--primary-color)}
+                .teammembers {
+                    font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                        letter-spacing: 0.03em;
+                        color: var(--primary-color)}
+                    .positionteam {
+                        font-weight: 400;
+                            font-size: 16px;
+                            line-height: 19px;
+                            letter-spacing: 0.03em;
+                            color: var(--secondary-color)}
+    footer {background-color: #2F303A}
+    .adressfooter { font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 1.7;
+                    letter-spacing: 0.03em;
+                    color: #FFFFFF}
+    .contactsfooter {
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 24px;
+        line-height: 1.7;
         letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6);}
-    .logostudiofooter {color: #FFFFFF;;}
+        color: rgba(255, 255, 255, 0.6)}
+    .logostudiofooter {color: #FFFFFF}
     
+    .portfolio-button {
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.6;
+        letter-spacing: 0.03em;
+        color: var(--primary-color)}
+    .portfolio-button:hover, :focus {
+        color: #FFFFFF; background-color: var(--hover-color);
+    }
+    .project-name {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: var(--primary-color)}
+        .project-description {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: 0.03em;
+            color: var(--secondary-color)}
