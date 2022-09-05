@@ -1,126 +1,134 @@
 :root {
     --primary-color: #212121;
     --secondary-color: #757575;
+    --third-color: #000000;
+    --fourth-color: #FFFFFF;
+    --footer-color: rgba(255, 255, 255, 0.6);
     --hover-color: #2196F3;
+
     --primary-background: #F5F5F5;
     --secondary-background: #F5F4FA;
-    --hero-background: #2F303A;
+    --hero-footer-background: #2F303A;
+    --button-hover-background: #188CE8;
 }
+
 a {text-decoration: none}
 ul {list-style: none}
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-style: normal}
-
-.header {background-color: #FFFFFF}
+    background-color: #FFFFFF;
+    color: #757575;
+    font-size: 14px;
+    letter-spacing: 0.03em;}
 
     .logo {
         font-family: 'Raleway';
-        font-style: normal;
         font-weight: 700;
         font-size: 26px;
-        line-height: 1.2;
-        letter-spacing: 0.03em}
-    .logoweb {color: #2196F3}
-    .logostudio {color: #000000}
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: var(--third-color)}
+    .logoweb {color: var(--hover-color)}
 
-    .link {
+    .sitenav { 
         font-weight: 500;
         font-size: 14px;
-        line-height: 1.1;
+        line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--primary-color)}
-    .link:hover, :focus {color: var(--hover-color)}
-    .contacts {
+    .sitenav:hover {color: var(--hover-color)}
+    .sitenav:focus {color: var(--hover-color)}
+    
+        .contacts {
             font-weight: 500;
             font-size: 14px;
-            line-height: 1.1;
+            line-height: 1.14;
             letter-spacing: 0.02em;
             color: var(--secondary-color)}
-    .contacts:hover,:focus {color: var(--hover-color)}
-   
-    .herosection {background-color: var(--hero-background)}
+        .contacts:hover {color: var(--hover-color)}
+        .contacts:focus {color: var(--hover-color)}
+
+    .herosection {background-color: var(--hero-footer-background)}
     .hero {
         font-weight: 900;
         font-size: 44px;
-        line-height: 1.4;
+        line-height: 1.36;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        color: #FFFFFF}
+        color: var(--fourth-color)}
+    
+    
 
    .button {cursor: pointer;
+            font-family: inherit;
             background-color: var(--hover-color);
             font-weight: 700;
             font-size: 16px;
-            line-height: 1.9;
-            display: flex;
-            align-items: center;
-            text-align: center;
+            line-height: 1.88;
             letter-spacing: 0.06em;
-            color: #FFFFFF}
+            color: var(--fourth-color)}
+    .button:hover {background-color: var(--button-hover-background);}
+    .button:focus {background-color: var(--button-hover-background);}
     
-        .feature {display: none}
+        .feature-header {visibility: hidden}
         
             .features {
                 font-weight: 700;
                 font-size: 14px;
-                line-height: 1.1;
+                line-height: 1.14;
                 letter-spacing: 0.03em;
                 text-transform: uppercase;
                 color: var(--primary-color)}
 
                 .text-features {
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 24px;
-                    letter-spacing: 0.03em;
-                    color: var(--secondary-color)}
-        
+                    line-height: 1.71;}
+                            
             .whatwedo, .ourteam {
                 font-weight: 700;
                 font-size: 36px;
-                line-height: 1.2;
+                line-height: 1.17;
                 letter-spacing: 0.03em;
                 color: var(--primary-color)}
                 .teammembers {
                     font-weight: 500;
                         font-size: 16px;
-                        line-height: 19px;
+                        line-height: 1.19;
                         letter-spacing: 0.03em;
                         color: var(--primary-color)}
                     .positionteam {
-                        font-weight: 400;
+                            font-weight: 400;
                             font-size: 16px;
-                            line-height: 19px;
+                            line-height: 1.19;
                             letter-spacing: 0.03em;
                             color: var(--secondary-color)}
-    footer {background-color: #2F303A}
-    .adressfooter { font-style: normal;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 1.7;
-                    letter-spacing: 0.03em;
-                    color: #FFFFFF}
-    .contactsfooter {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6)}
-    .logostudiofooter {color: #FFFFFF}
+
+    .footer { background-color: var(--hero-footer-background)}
+    .adressfooter { 
+                font-style: normal;
+                line-height: 1.71;
+                color: var(--fourth-color)}
+    .contactsfooter {font-style: normal;
+                     line-height: 1.71;
+                     color: var(--footer-color)}
+    .logostudiofooter {color: var(--fourth-color)}
     
+    .portfolio-header {visibility: hidden}
     .portfolio-button {
+        font-family: inherit;
         cursor: pointer;
+        font-family: inherit;
         font-weight: 500;
         font-size: 16px;
-        line-height: 1.6;
+        line-height: 1.63;
         letter-spacing: 0.03em;
         color: var(--primary-color)}
-    .portfolio-button:hover, :focus {
-        color: #FFFFFF; background-color: var(--hover-color);
-    }
+    
+    .btn:hover {color: var(--fourth-color); 
+                background-color: var(--hover-color);}
+    .btn:focus {color: var(--fourth-color);
+                background-color: var(--hover-color);}
+        
     .project-name {
         font-weight: 700;
         font-size: 18px;
@@ -128,8 +136,6 @@ body {
         letter-spacing: 0.06em;
         color: var(--primary-color)}
         .project-description {
-            font-weight: 400;
             font-size: 16px;
-            line-height: 30px;
-            letter-spacing: 0.03em;
+            line-height: 1.88;
             color: var(--secondary-color)}
