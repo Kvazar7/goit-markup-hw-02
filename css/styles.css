@@ -31,24 +31,25 @@ body {
         color: var(--third-color)}
     .logoweb {color: var(--hover-color)}
 
+    
+
     .sitenav { 
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--primary-color)}
-    .sitenav:hover {color: var(--hover-color)}
-    .sitenav:focus {color: var(--hover-color)}
-    .sitenav:active {color: var(--hover-color) ;}
+    .sitenav:hover, .sitenav:focus {color: var(--hover-color)}
     
+    .currenpage {color: var(--hover-color);}
+
         .contacts {
             font-weight: 500;
             font-size: 14px;
             line-height: 1.14;
             letter-spacing: 0.02em;
             color: var(--secondary-color)}
-        .contacts:hover {color: var(--hover-color)}
-        .contacts:focus {color: var(--hover-color)}
+        .contacts:hover, .contacts:focus {color: var(--hover-color)}
 
     .herosection {background-color: var(--hero-footer-background)}
     .hero {
@@ -59,9 +60,7 @@ body {
         text-transform: uppercase;
         color: var(--fourth-color)}
     
-    
-
-   .button {cursor: pointer;
+.button {cursor: pointer;
             font-family: inherit;
             background-color: var(--hover-color);
             font-weight: 700;
@@ -69,8 +68,7 @@ body {
             line-height: 1.88;
             letter-spacing: 0.06em;
             color: var(--fourth-color)}
-    .button:hover {background-color: var(--button-hover-background);}
-    .button:focus {background-color: var(--button-hover-background);}
+    .button:hover, .button:focus {background-color: var(--button-hover-background);}
     
         .feature-header {visibility: hidden}
         
