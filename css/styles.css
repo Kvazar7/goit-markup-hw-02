@@ -39,6 +39,7 @@ body {
         color: var(--primary-color)}
     .sitenav:hover {color: var(--hover-color)}
     .sitenav:focus {color: var(--hover-color)}
+    .sitenav:active {color: var(--hover-color) ;}
     
         .contacts {
             font-weight: 500;
@@ -113,21 +114,19 @@ body {
                      color: var(--footer-color)}
     .logostudiofooter {color: var(--fourth-color)}
     
-    .portfolio-header {visibility: hidden}
-    .portfolio-button {
-        font-family: inherit;
-        cursor: pointer;
-        font-family: inherit;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.63;
-        letter-spacing: 0.03em;
-        color: var(--primary-color)}
-    
-    .btn:hover {color: var(--fourth-color); 
-                background-color: var(--hover-color);}
-    .btn:focus {color: var(--fourth-color);
-                background-color: var(--hover-color);}
+    .portfolio-header { visibility: hidden}
+    .portfolio-button { font-family: inherit;
+                        cursor: pointer;
+                        font-family: inherit;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 1.63;
+                        letter-spacing: 0.03em;
+                        color: var(--primary-color)}
+    .portfolio-button:hover {   color: var(--fourth-color); 
+                                background-color: var(--hover-color);}
+    .portfolio-button:focus {   color: var(--fourth-color);
+                                background-color: var(--hover-color);}
         
     .project-name {
         font-weight: 700;
